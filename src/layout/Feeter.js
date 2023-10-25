@@ -1,3 +1,5 @@
+import './Feeter.scss';
+
 export function Feeter() {
-    return <div>FEETER</div>;
+    return <div className='feeter'>FEETER</div>;
 }
