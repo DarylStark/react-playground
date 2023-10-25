@@ -1,11 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 const reducer = (state, action) => {
+    console.log('reducer called');
     switch (action.type) {
         case 'increment_count':
             return {
                 ...state,
-                count: state.count + 1
+                count: state.count + action.value
             };
         default:
             return state;

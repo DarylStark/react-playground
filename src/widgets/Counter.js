@@ -10,7 +10,7 @@ function CountShower() {
 
 function Button() {
     const handleClick = () => {
-        store.dispatch({ type: 'increment_count', });
+        store.dispatch({ type: 'increment_count', value: 3 });
     }
 
     const button = <button onClick={handleClick}>Increase count</button>;
